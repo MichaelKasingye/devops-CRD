@@ -2,7 +2,7 @@
 
 namespace: staging
 replicas:
-  - name: totos-deployment
+  - name: todos-deployment
     count: 1
 images:
   - name: emmamichael/todos-test
