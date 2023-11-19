@@ -1,0 +1,11 @@
+# environments/staging/my-app/kustomization.yaml
+
+namespace: production
+replicas:
+  - name: todos-deployment
+    count: 2
+images:
+  - name: emmamichael/todos-test
+    newTag: v0.1.0.1
+resources:
+  - ../../../base
