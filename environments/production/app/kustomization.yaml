@@ -3,7 +3,7 @@
 namespace: production
 replicas:
   - name: todos-deployment
-    count: 2
+    count: 1
 images:
   - name: emmamichael/todos-test
     newTag: v0.1.0.2
