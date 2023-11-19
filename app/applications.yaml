@@ -9,7 +9,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: default1
+  project: default
   source:
     repoURL: https://github.com/MichaelKasingye/devops-CRD
     targetRevision: main # branch to track
