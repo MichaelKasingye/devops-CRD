@@ -24,14 +24,14 @@ patches:
       name: postgres-pv-test
     patch: pv-patch.yaml  
 
-resources:
-  - ../../base/service.yaml
-  - ../../base/secret.yaml
-  - ../../base/postgres-deployment.yaml
-  - ../../base/persistent-volume.yaml
-  - ../../base/persistent-volume-claim.yaml
-  - ../../base/namespace.yaml
-  - ../../base/deployment.yaml
+# resources:
+#   - ../../base/service.yaml
+#   - ../../base/secret.yaml
+#   - ../../base/postgres-deployment.yaml
+#   - ../../base/persistent-volume.yaml
+#   - ../../base/persistent-volume-claim.yaml
+#   - ../../base/namespace.yaml
+#   - ../../base/deployment.yaml
 
   - target:
       kind: PersistentVolumeClaim
