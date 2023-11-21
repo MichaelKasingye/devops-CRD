@@ -20,6 +20,7 @@ patches:
     #     value: 4000
       # namespace: <namespace>  # If your service is in a specific namespace
     patch: |-
+      - op: replace
       apiVersion: v1
       kind: Service
       metadata:
