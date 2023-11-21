@@ -14,20 +14,10 @@ patches:
   - target:
       kind: Service
       name: todos-service
-    # patch: |-
-    #   - op: replace
-    #     path: /spec/ports/0/port
-    #     value: 4000
-      # namespace: <namespace>  # If your service is in a specific namespace
     patch: |-
       - op: replace
-      apiVersion: v1
-      kind: Service
-      metadata:
-        name: todos-service
-      spec:
-        ports:
-        - port: 4000
+        path: /spec/ports/0/port
+        value: 4000
 
   - target:
       kind: PersistentVolume
