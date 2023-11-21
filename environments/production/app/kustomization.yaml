@@ -7,7 +7,7 @@ replicas:
 images:
   - name: emmamichael/todos-test
     newTag: v0.1.0.2
-bases:
+resources:
   - ../../../base
 
 patches:
