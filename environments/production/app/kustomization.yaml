@@ -17,7 +17,15 @@ patches:
     patch: |-
       - op: replace
         path: /spec/ports/0/port
-        value: 4000
+        value: 5000
+
+  - target:
+      kind: Deployment
+      name: todos-deployment
+    patch: |-
+      - op: replace
+        path: /spec/template/spec/containers/0/env/1/value
+        value: "5000"
 
   - target:
       kind: PersistentVolume
