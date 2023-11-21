@@ -22,7 +22,29 @@ patches:
   - target:
       kind: PersistentVolume
       name: postgres-pv-test
-    patch: pv-patch.yaml  
+    # patch: pv-patch.yaml  
+    patch: |-  
+      - op: replace
+        path: /metadata/name
+        value: postgres-pv-production
+
+      - op: replace
+        path: /spec/hostPath/path
+        value: "/home/michael/vol-prod"  
+
+  - target:
+      kind: PersistentVolumeClaim
+      name: postgres-pvc-test
+    # patch: pvc-patch.yaml 
+    patch: |-  
+      - op: replace
+        path: /metadata/name
+        value: postgres-pvc-production
+
+      - op: replace
+        path: /spec/volumeName
+        value: postgres-pv-production
+
 
 # resources:
 #   - ../../base/service.yaml
@@ -32,8 +54,3 @@ patches:
 #   - ../../base/persistent-volume-claim.yaml
 #   - ../../base/namespace.yaml
 #   - ../../base/deployment.yaml
-
-  - target:
-      kind: PersistentVolumeClaim
-      name: postgres-pvc-test
-    patch: pvc-patch.yaml          
