@@ -17,7 +17,7 @@ patches:
     patch: |-
       - op: replace
         # path: /spec/ports/0/port
-        path: /spec/ports/port
+        path: /spec/ports/0/port
         value: 4000
 
   - target:
