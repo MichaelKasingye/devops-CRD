@@ -34,7 +34,7 @@ patches:
     patch: |-  
       - op: replace
         path: /metadata/name
-        value: postgres-pv-production
+        value: postgres-pv-productionx
 
       - op: replace
         path: /spec/hostPath/path
@@ -51,4 +51,4 @@ patches:
 
       - op: replace
         path: /spec/volumeName
-        value: postgres-pv-production
+        value: postgres-pv-productionx
