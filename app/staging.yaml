@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: todos
+  name: todos-staging
   namespace: argocd
   annotations:
     argocd-image-updater.argoproj.io/image-list: emmamichael/todos-test:~v0.1
