@@ -12,8 +12,8 @@ spec:
   project: default
   source:
     repoURL: https://github.com/MichaelKasingye/devops-CRD
-    targetRevision: staging # branch to track
-    path: environments/staging/app
+    targetRevision: dev # branch to track
+    path: environments/dev/app
   destination:
     server: https://kubernetes.default.svc # cluster where argocd is running
   syncPolicy:
