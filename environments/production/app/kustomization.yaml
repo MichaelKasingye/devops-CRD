@@ -38,7 +38,7 @@ patches:
 
       - op: replace
         path: /spec/hostPath/path
-        value: "/home/michael/vol-prod"  
+        value: "/home/michael/vol-prodx"  
 
   - target:
       kind: PersistentVolumeClaim
