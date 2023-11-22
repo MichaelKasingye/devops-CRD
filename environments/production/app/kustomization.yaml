@@ -47,7 +47,7 @@ patches:
     patch: |-  
       - op: replace
         path: /metadata/name
-        value: postgres-pvc-production
+        value: postgres-pvc-productionx
 
       - op: replace
         path: /spec/volumeName
