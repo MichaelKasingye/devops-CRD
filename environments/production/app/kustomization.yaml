@@ -17,7 +17,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/ports/0/port
-        value: 5000
+        value: 3000
 
   - target:
       kind: Deployment
@@ -25,7 +25,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/template/spec/containers/0/env/1/value
-        value: "5000"
+        value: "3000"
 
   - target:
       kind: PersistentVolume
@@ -52,13 +52,3 @@ patches:
       - op: replace
         path: /spec/volumeName
         value: postgres-pv-production
-
-
-# resources:
-#   - ../../base/service.yaml
-#   - ../../base/secret.yaml
-#   - ../../base/postgres-deployment.yaml
-#   - ../../base/persistent-volume.yaml
-#   - ../../base/persistent-volume-claim.yaml
-#   - ../../base/namespace.yaml
-#   - ../../base/deployment.yaml
