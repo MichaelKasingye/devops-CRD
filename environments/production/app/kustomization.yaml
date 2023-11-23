@@ -17,7 +17,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/ports/0/port
-        value: 3000
+        value: 6000
 
   - target:
       kind: Deployment
