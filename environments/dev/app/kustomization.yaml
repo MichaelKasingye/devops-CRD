@@ -6,7 +6,7 @@ images:
   - name: emmamichael/todos-test
     # newTag: v0.1.0.9
     newTag: v0.12.2
-    
+    # 
 resources:
   - ../../../base
 
