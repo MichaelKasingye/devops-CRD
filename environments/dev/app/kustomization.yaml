@@ -4,7 +4,6 @@ replicas:
     count: 1
 images:
   - name: emmamichael/todos-test
-    # newTag: v0.1.0.6
     newTag: v0.1.0.9
     
 resources:
@@ -30,9 +29,8 @@ patches:
   - target:
       kind: PersistentVolume
       name: postgres-pv-test
-    # patch: pv-patch.yaml  
     patch: |-  
-      - op: replac
+      - op: replace
         path: /metadata/name
         value: postgres-pv-dev
 
@@ -43,7 +41,6 @@ patches:
   - target:
       kind: PersistentVolumeClaim
       name: postgres-pvc-test
-    # patch: pvc-patch.yaml 
     patch: |-  
       - op: replace
         path: /metadata/name
