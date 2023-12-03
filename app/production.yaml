@@ -4,7 +4,8 @@ metadata:
   name: todos-productions
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: emmamichael/todos-test:~v0.1
+    # argocd-image-updater.argoproj.io/image-list: emmamichael/todos-test:~v0.1
+    argocd-image-updater.argoproj.io/image-list: emmamichael/todos-test
     argocd-image-updater.argoproj.io/write-back-method: git
   finalizers:
     - resources-finalizer.argocd.argoproj.io
