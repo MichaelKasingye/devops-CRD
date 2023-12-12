@@ -11,5 +11,5 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/home/michael/vol"
+    path: "/home/sprintdevs/todo-dev-volume"
     
